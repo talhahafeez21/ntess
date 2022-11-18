@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_margin="22dp"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <TextView
+
+        android:layout_width="match_parent"
+        android:text="Signup"
+        android:gravity="center"
+        android:textSize="32sp"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:layout_marginTop="82dp"
+        android:id="@+id/name"
+       android:hint="Enter email"
+        android:inputType="textEmailAddress"
+        android:textSize="32dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+
+        android:textSize="32dp"
+        android:layout_below="@+id/name"
+        android:layout_marginTop="71dp"
+        android:id="@+id/pass"
+        android:hint="Enter passwrd"
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_below="@+id/pass"
+        android:layout_marginTop="91dp"
+        android:id="@+id/signup"
+        android:text="Sign up"
+        android:layout_height="wrap_content"/>
+
+
+      <TextView
+     android:id="@+id/have"
+     android:layout_width="match_parent"
+    android:layout_marginTop="21dp"
+    android:gravity="center"
+          android:clickable="true"
+          android:onClick="talha"
+    android:textSize="19sp"
+    android:layout_below="@+id/signup"
+    android:text="@string/already_have_an_accunt"
+    android:layout_height="wrap_content"
+          android:focusable="true" />
+</RelativeLayout>

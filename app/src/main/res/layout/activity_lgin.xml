@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_margin="22dp"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:text="Lgin"
+        android:gravity="center"
+        android:textSize="32sp"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:layout_marginTop="82dp"
+        android:id="@+id/lginemail"
+        android:hint="Enter email"
+        android:inputType="textEmailAddress"
+        android:textSize="32dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+
+        android:textSize="32dp"
+        android:layout_below="@+id/lginemail"
+        android:layout_marginTop="71dp"
+        android:id="@+id/lginpass"
+
+        android:hint="Enter passwrd"
+        android:inputType="textPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_below="@+id/lginpass"
+        android:layout_marginTop="91dp"
+        android:id="@+id/lgin"
+        android:text="Lgin"
+        android:layout_height="wrap_content"/>
+
+
+
+</RelativeLayout>

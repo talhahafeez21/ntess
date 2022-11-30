@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="15dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:elevation="12dp"
+        app:cardCornerRadius="22dp"
+        android:padding="22dp"
+        android:id="@+id/ntecard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/nte"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:id="@+id/ntetitle"
+                    android:paddingTop="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="this is yu develper"
+                    android:textSize="20sp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+                </TextView>
+                <ImageView
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:layout_weight="0"
+                    android:id="@+id/menuppbuttn"
+                    android:src="@drawable/ic_baseline_more_vert_24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                </ImageView>
+            </LinearLayout>
+           <RelativeLayout
+               android:orientation="horizontal"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:paddingRight="10dp"
+                   android:paddingBottom="20dp"
+                   android:paddingLeft="10dp"
+                   android:textSize="15sp"
+                   android:text="this is yur cde which appear here"
+                   android:paddingTop="10dp"
+                   android:id="@+id/ntecntent"
+                   android:layout_height="wrap_content"/>
+
+               <Button
+                   android:layout_marginTop="12dp"
+                   android:id="@+id/favbtns"
+                   android:layout_width="30dp"
+                   android:layout_height="25dp"
+                   android:layout_gravity="end"
+                   android:layout_alignParentEnd="true"
+                   android:layout_marginRight="3dp"
+                   android:background="@drawable/ic_favorite_red_24dp"
+                   android:gravity="end" />
+           </RelativeLayout>
+            
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

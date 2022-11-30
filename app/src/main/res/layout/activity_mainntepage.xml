@@ -5,13 +5,40 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".mainntepage">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize">
+       <Toolbar
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+           <TextView
+               android:layout_width="wrap_content"
+               android:text="Ntes"
+               android:textColor="@color/white"
+               android:layout_gravity="center"
+               android:textSize="42sp"
+               android:layout_height="wrap_content"/>
+
+           <ImageView
+               android:id="@+id/img"
+                android:padding="22dp"
+               android:layout_width="wrap_content"
+               android:src="@drawable/sharing_share_icon_124236"
+               android:layout_gravity="end"
+               android:layout_height="wrap_content"/>
+       </Toolbar>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:layout_width="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="30dp"
+        android:layout_marginBottom="40dp"
         android:background="#A1F4FB"
         android:src="@drawable/ic_baseline_add_24"
-        android:layout_marginRight="30dp"
+        android:layout_marginRight="40dp"
         android:id="@+id/create"
         android:layout_alignParentRight="true"
         android:layout_height="wrap_content"
@@ -20,6 +47,7 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
+        android:id="@+id/recyclerview"
         android:scrollbars="vertical"
         android:layout_height="match_parent">
 

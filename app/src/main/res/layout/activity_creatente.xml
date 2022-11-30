@@ -1,9 +1,82 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:orientation="vertical"
     android:layout_height="match_parent"
     tools:context=".creatente">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_height="?actionBarSize"
+        android:layout_width="match_parent"
+        android:theme="?actionBarTheme"
+        android:background="@color/black"
+        >
+        <TextView
+            android:text="Details"
+            android:layout_gravity="center"
+            android:textSize="33sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        </TextView>
+
+
+    </androidx.appcompat.widget.Toolbar>
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Title"
+        android:textSize="41sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginTop="22sp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/createtitlefnte"
+        android:layout_width="300dp"
+        android:textSize="25sp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:maxLines="1"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Description"
+        android:textSize="41sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginTop="22sp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:layout_width="300dp"
+        android:textSize="25sp"
+        android:id="@+id/createcntentfnte"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:maxLines="10"
+        android:layout_height="wrap_content"/>
+
+   <RelativeLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content">
+       <com.google.android.material.floatingactionbutton.FloatingActionButton
+           android:id="@+id/savente"
+           android:layout_width="wrap_content"
+           android:layout_alignParentBottom="true"
+           android:layout_alignParentRight="true"
+           android:layout_height="wrap_content"
+           android:layout_gravity="bottom"
+           android:layout_marginBottom="44dp"
+           android:layout_marginRight="32dp"
+           android:background="#A1F4FB"
+           android:foregroundGravity="bottom"
+           android:src="@drawable/ic_baseline_save_24" />
+   </RelativeLayout>
+
+
+</LinearLayout>

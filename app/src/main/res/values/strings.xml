@@ -1,4 +1,5 @@
 <resources>
-    <string name="app_name">swe</string>
-    <string name="already_have_an_accunt">Already have an accunt</string>
+    <string name="app_name">Firebase Google Login</string>
+    <string name="web_client_id">260462615548-mbq287hn0l1g5dqrelrodg02quevedc0.apps.googleusercontent.com</string>
+
 </resources>
